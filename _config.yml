@@ -6,22 +6,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Awesome Site Title
-email: your-email@domain.com
+title: Matt Reid | Senior Software Developer
+email: matt@matt-reid.co.uk
 description: >
-  Awesome site description here
+  Matthew Reid is a software developer and web developer, specialising in Java, Node and Scala as well as html js and css.
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.matt-reid.co.uk" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
-name: 'Your Name'
+name: 'Matt Reid'
 bio: >
   Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
   Ne solet nostrum complectitur pri, vis ut inani populo.
 author_image: "/assets/images/author.jpg"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: Matthew_Reid
+github_username:  drei01
 
 # Build settings
 markdown: kramdown
