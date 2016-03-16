@@ -9,17 +9,16 @@
 title: Matt Reid | Senior Software Developer
 email: matt@matt-reid.co.uk
 description: >
-  Matthew Reid is a software developer and web developer, specialising in Java, Node and Scala as well as html js and css.
-logo: "/assets/images/logo.jpg"
+  Matthew Reid is a software developer and web developer, specialising in Java, Node and Scala as well as HTML JavasScript and CSS.
+logo: "/assets/images/favicon.ico"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.matt-reid.co.uk" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Matt Reid'
 bio: >
-  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
-  Ne solet nostrum complectitur pri, vis ut inani populo.
-author_image: "/assets/images/author.jpg"
+  Lead Software Architect. Java/Node enthusiast, badminton lover, foodie.
+author_image: "/assets/images/matt-reid.jpg"
 twitter_username: Matthew_Reid
 github_username:  drei01
 

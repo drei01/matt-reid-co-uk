@@ -13,7 +13,7 @@ layout: default
     </section>
     <footer class="post-footer">
       <section class="share">
-        <a class="icon" href="http://twitter.com/share?text={{page.title | cgi_escape}}&amp;url={{site.url}}{{page.id}}" target="_blank">
+        <a class="icon" href="http://twitter.com/share?text={{page.title | cgi_escape}}&amp;url={{site.url}}{{page.id}}" target="_blank" id="shareTwitter">
           Share on
           {% include icon-twitter.html %}
         </a>
@@ -48,7 +48,7 @@ layout: default
       <div class="isRight">
         <h5 class="index-headline featured"><span>Supported by</span></h5>
         <footer class="site-footer">
-          <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
+          <section class="poweredby">Need a web based cron? <br/> Schedule HTTP requests to your webapp with <a href="https://www.cronasaservice.com" target="_blank">cronasaservice.com</a></section>
           <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
           <div class="inner">
             <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
@@ -58,3 +58,5 @@ layout: default
     </div>
   </article>
 </main>
+
+{% include analytics.html %}
