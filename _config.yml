@@ -30,3 +30,4 @@ kramdown:
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap
