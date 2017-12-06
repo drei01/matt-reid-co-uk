@@ -2,7 +2,7 @@
 layout: post
 title: BuildStuff Lithuania 2017
 ---
-I recently attended [BuildStuff](http://buildstuff.lt/) for the first time thanks to my company [Small Improvements](https://www.small-improvements.com). I can't remember the last time I came back from a conference so invigorated and full of learning. I wrote a post about it over on the Small Improvements [tech blog](https://tech.small-improvements.com) but here's something that didn't make it into that post.
+I recently attended [BuildStuff](http://buildstuff.lt/) for the first time thanks to my company [Small Improvements](https://www.small-improvements.com). I can't remember the last time I came back from a conference so invigorated and full of learning. I wrote a post about it over on the Small Improvements [tech blog](https://tech.small-improvements.com/2017/12/05/5-lessons-from-build-stuff-2017/) but here's something that didn't make it into that post.
 
 #### Procedural programming is making a comeback
 
