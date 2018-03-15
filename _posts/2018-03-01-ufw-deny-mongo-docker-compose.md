@@ -47,3 +47,19 @@ The result should be:
 Next, restart docker using `service docker restart`.
 
 You might need to restart some docker containers at this point (I did as I was using Docker Compose).
+
+## Ubuntu
+
+This isn't quite the end of the story for Ubuntu users. The docker service on Ubuntu doesn't use the `etc/default/docker` file by default. In order to change this you need to update the service.
+
+Edit `/lib/systemd/system/docker.service`
+
+And under the **[Service]** section, add the following:
+`EnvironmentFile=-/etc/default/docker`
+
+In the following line starting `ExecStart=` you need to add `$DOCKER_OPTS` at the end. It should look something like this:
+```
+EnvironmentFile=-/etc/default/docker
+EnvironmentFile=-/etc/default/docker
+ExecStart=/usr/bin/dockerd -H fd:// $DOCKER_OPTS
+```
