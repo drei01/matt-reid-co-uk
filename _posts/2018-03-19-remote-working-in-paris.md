@@ -11,9 +11,12 @@ It all started when my wife was asked to work in Paris for a couple of days at s
 ## Do your research
 
 I spent quite a bit of time checking out various co-working options online. I found [this list](https://medium.com/future-of-work/my-16-favorite-places-for-coffee-and-coworking-in-paris-123df1a9a998) by Julie Henches very handy. There's a few things you'll need to bear in mind when choosing your co-working spot.
-- **Cost** some places charge by the hour and have a special discount for the whole day. Others are simply free and request that you buy coffee and snacks in their cafe.
-- **Opening hours** not all cafes keep the same hours as your office. Be sure to choose a place that will be open when you have those important meetings.
-- **Proximity** you might have found the perfect co-working space but if it's 45 minutes from your accommodation then your day just got a whole lot more expensive (not to mention the boring commute)
+
+**Cost** - Some places charge by the hour and have a special discount for the whole day. Others are simply free and request that you buy coffee and snacks in their cafe.
+
+**Opening hours** - Not all cafes keep the same hours as your office. Be sure to choose a place that will be open when you have those important meetings.
+
+**Proximity** - You might have found the perfect co-working space but if it's 45 minutes from your accommodation then your day just got a whole lot more expensive (not to mention the boring commute)
 
 ## Get there early
 
@@ -44,7 +47,7 @@ Most cafes won't allow you to bring your own lunch (which could save you a serio
 
 **Cost:** Free
 
-**Opening time:** 9am
+**Opening times (week days):** 9am - 8pm
 
 <amp-iframe width="600"
   title="Numa Co Working Paris"
@@ -63,7 +66,7 @@ This startup hub is very buzzy, the offices above are an accelerator for young c
 
 **Cost:** Free when you buy drinks
 
-**Opening time:** 9am
+**Opening times (week days):** 9am - 9pm
 
 <amp-iframe width="600"
   title="Bulliz Co Working Paris"
@@ -80,9 +83,9 @@ This super friendly cafe isn't specifically for remote working but there were a 
 
 **14 Rue des Carmes, 75005 Paris, France**
 
-**Cost:** €5 per hour with free coffee and snacks
+**Cost:** €5 per hour (€25 for the whole day) with unlimited free coffee and snacks
 
-**Opening time:** 8:30am
+**Opening times (week days):** 8:30am - 7pm
 
 <amp-iframe width="600"
   title="Nuage Co Working Paris"
