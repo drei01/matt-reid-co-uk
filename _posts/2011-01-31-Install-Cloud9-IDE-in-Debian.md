@@ -30,8 +30,6 @@ change to the directory where you want to install the ide, then run
  sudo git clone git://github.com/ajaxorg/cloud9.git
 ```
 
-![installing cloud9 ide](http://i52.tinypic.com/2mcsvv4.png)
-
 update submodules
 
 ``` {.js name="code"}
