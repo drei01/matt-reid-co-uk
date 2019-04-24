@@ -19,7 +19,7 @@ Most airlines have dedicated seating these days so there's really no reason to s
 
 Once the cabin reaches a certain capacity, they start putting your bags in the hold. Staff are usually looking for any suitcases, this means they forget about backpacks a lot of the time. You can usually get away with taking a backpack onboard even when they are putting other bags in the hold. Backpacks also squash into spaces in the overhead lockers.
 
-# Check in at the last minute for a seat upgrade
+## Check in at the last minute for a seat upgrade
 
 As most budget airlines assign you a random seat these days, you can hijack their process to bag yourself an upgrade. The seats with the most leg room (those at the front and in the middle by the emergency exits) are picked last. This means you can check in at the last minute when most of the plane is full and you are more likely to be given the best seats as they will be the last ones left. As some airlines try to split passengers who are travelling together up unless they "upgrade", they often leave empty seats and try and find a free row. This gives you even more chance of getting the leg room seat.
 
