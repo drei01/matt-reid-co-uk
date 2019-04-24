@@ -10,7 +10,12 @@ I'm sitting at the dining table, laptop open, looking out over the balcony to a 
 ## Check the reviews before you book your Airbnb
 
 Staying in someone elses apartment is great because you have all the ameneties that are missing from a hotel (kitchen, washing facilities and )
-So when you think you've found the perfect remote working hangout, be sure to check the reviews for: - reliable wifi connection - well stocked kitchen - proximity to coffee shop/food places - quiet neighbourhood (you don't want traffic noise spoiling your standup)
+So when you think you've found the perfect remote working hangout, be sure to check the reviews for:
+
+- reliable wifi connection
+- well stocked kitchen
+- proximity to coffee shop/food places
+- quiet neighbourhood (you don't want traffic noise spoiling your standup)
 
 ## Bring your own portable speaker
 
