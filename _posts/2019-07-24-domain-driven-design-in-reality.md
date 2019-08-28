@@ -6,6 +6,8 @@ canonical_url: https://tech.small-improvements.com/implementing-domain-driven-de
 
 <amp-img src="https://tech.small-improvements.com/wp-content/uploads/2019/05/domain-driven-design-small-improvements-1000x667.jpg" alt="" height="485" width="667"></amp-img>
 
+<amp-iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html&voice=en-GB-Wavenet-D" article-url="https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html" allowfullscreen=""></amp-iframe>
+
 We all love reading about the latest software developments trends and buzzwords but they can often turn out to be just that, buzzwords. For us at Small Improvements, Domain Driven Design (DDD) has really lived up to it’s own hype though and helped us build better software, faster and fewer bugs to boot. Do we have any evidence to back up that claim you ask? Well, here’s an example taken from one of our features 1:1 Meetings and how DDD helped us turn the codebase from a jungle of hidden traps, into a joyous place to be.
 
 ## The old architecture
