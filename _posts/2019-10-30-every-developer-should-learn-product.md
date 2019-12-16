@@ -3,9 +3,11 @@ layout: post
 title: Why every developer should get into product management
 ---
 
+<amp-iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://play.ht/drafts/qw5qkzruOOd0OL2XG4V4Y5W4IZE3/G-Wg9RzC&voice=Matthew" article-url="https://play.ht/drafts/qw5qkzruOOd0OL2XG4V4Y5W4IZE3/G-Wg9RzC" allowfullscreen=""></amp-iframe>
+
 ## The old switch-a-roo
 
-There's nothing more frustrating than finishing work on your feature only for Product to move the goal posts right? "The feature needs to do these 3 extra things now" or "we just realised that part won't work" are dreaded words to us devs. We just spend hours coding the feature exactly to spec and someone with no idea how long it take just pulled the carpet from under our feet.
+There's nothing more frustrating than finishing work on your feature only for Product to move the goal posts right? "The feature needs to do these 3 extra things now" or "we just realised that part won't work" are dreaded words to developers. We just spent hours coding the feature exactly to spec and someone with no idea how long it took just pulled the carpet from under our feet.
 
 ## What if there was a better way
 
@@ -15,7 +17,8 @@ The end goal here is for you as a developer to be involved in the product develo
 
 ## Further Reading
 
-Of course no self confessed blog post would be complete without an extensive reading list, these are ordered in order of importance:
+Of course no self confessed blog post would be complete without an extensive reading list, these are ordered by importance:
 
 - [Inspired - Marty Cagan](http://bit.ly/2N0CKl2)
 - [When Coffee and Kale Compete](http://www.whencoffeeandkalecompete.com/)
+- [6 steps to validating your startup idea (also relevant for product features)](https://hackernoon.com/6-steps-to-validating-your-startup-idea-d3ba64187bf#.6uxokf3qa)
