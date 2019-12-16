@@ -3,7 +3,7 @@ layout: post
 title: Why every developer should get into product management
 ---
 
-<amp-iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://play.ht/drafts/qw5qkzruOOd0OL2XG4V4Y5W4IZE3/G-Wg9RzC&voice=Matthew" article-url="https://play.ht/drafts/qw5qkzruOOd0OL2XG4V4Y5W4IZE3/G-Wg9RzC" allowfullscreen=""></amp-iframe>
+<amp-iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://www.matt-reid.co.uk/2019/10/30/every-developer-should-learn-product.html&voice=Matthew" article-url="https://www.matt-reid.co.uk/2019/10/30/every-developer-should-learn-product.html" allowfullscreen=""></amp-iframe>
 
 ## The old switch-a-roo
 
