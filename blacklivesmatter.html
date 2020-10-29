@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Matt Reid - Black Lives Matter</title>
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+    <link
+      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!--Replace with your tailwind.css once created-->
+  </head>
+
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0">
+      <div
+        id="progress"
+        class="h-1 z-20 top-0"
+        style="
+          background: linear-gradient(
+            to right,
+            #4dc0b5 var(--scroll),
+            transparent 0
+          );
+        "
+      ></div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20">
+      <div
+        class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal"
+        style="font-family: Georgia, serif"
+      >
+        <!--Title-->
+        <div class="font-sans">
+          <h1
+            class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl"
+          >
+            Black Lives Matter
+          </h1>
+          <p class="text-sm md:text-base font-normal text-gray-600">
+            Published 29 October 2020
+          </p>
+        </div>
+
+        <!--Post Content-->
+
+        <!--Lead Para-->
+        <p class="py-6">
+          I've been thinking about the Black Lives Matter movement recently. 
+          It does seem on the surface to be making headway in every day life. 
+          Media coverage, advertising campaigns, podcast line ups etc seem to be getting more diverse and that's a 
+          good thing for everyone. What I have been wondering though is when will it come to fruition?
+        </p>
+
+        <h2 class="py-2 font-sans">The legacy of <a href="https://twitter.com/search?q=BlackLivesMatter" class="text-blue-900" target="_blank">#blacklivesmatter <img src="https://matt-reid-images.s3-eu-west-1.amazonaws.com/BlackHistoryMonth.png" class="h-6 w-6 inline"/></a></h2>
+
+        <p class="py-6">
+          Although it may appear that overnight we've because increasingly diverse in our portrayal of human kind, I don't think black children growing up now will see the benefit of this current movement. When the #blacklivesmatter movement kicked off, media outlets rushed to find experts to talk to on the subject. The people they found were already in a priveleged position. The black actors, poets, artists and social commentators we're suddenly seeing more of on our screens are the 1% who worked twice as hard as their white neighbour to get where they are today, not the average Jo off the streets being called up to add their voice. In short, the black people who beat adversity to get recognition or face, are being rewarded more but this doesn't affect the average black person.
+        </p>
+        
+
+        <p class="py-6">
+          Our family certainly made changes as part of the #blacklivesmatter movement. It made us stop and take a look at ourselves. Our white privelege, the things we say and do out of habit and they way we were brought up by our parents (and them by their parents etc.). We now try to check our privelege as often as possible. We're both reading more in black history in the UK and elsewhere and we've diversified our childrens book selection to include some of the great childrens books featuring non-white characters. The effect of this has been not only to diversify our content in terms of skin colour, but also gender, sexuality and others.</p>
+
+<p class="py-6">I believe the Black Lives Matter movement will affect a generation from now. The black and brown children going through school now won't see the benefit of this. For them, it's already too late, the power structures are still there. It's not enough to simply treat black people equally, the balance is too off kilter. Being treated equally doesn't stop the imbalance that already exists. If we ALL (black, brown, white, what ever your skin colour) make an effort to educate our children to be allies to the black people around them. To stand up for them, to help them up using the white privelege we give them through sheer luck of being born in a certain place and time to certain parents. Then, maybe our children's generation will be more tolerant, equal, safer and happier then ours.</p>
+
+        <!--/ Post Content-->
+      </div>
+
+      <!--Divider-->
+      <hr class="border-b-2 border-gray-400 mb-8 mx-4" />
+
+      <!--Author-->
+      <div class="flex w-full items-center font-sans px-4 py-12">
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="https://matt-reid.co.uk/assets/images/favicon.ico"
+          alt="Avatar of Author"
+        />
+        <div class="flex-1 px-2">
+          <p class="text-base font-bold text-base md:text-xl leading-none mb-2">
+            Matthew Reid
+          </p>
+          <p class="text-gray-600 text-xs md:text-base">
+            Lead Software Architect. Java and js enthusiast, badminton lover, foodie. I blog about software development at 
+            <a
+              class="text-teal-500 no-underline hover:underline"
+              href="https://www.matt-reid.co.uk"
+              >matt-reid.co.uk</a
+            >
+          </p>
+        </div>
+        <div class="justify-end">
+          <a href="https://www.itsnicethat.com/news/resources-supporting-black-lives-matter-movement-creative-industry-010620"
+            class="bg-transparent border border-gray-500 hover:border-teal-500 text-xs text-gray-500 hover:text-teal-500 font-bold py-2 px-4 rounded-full"
+          >
+            Read More on BLM
+        </a>
+        </div>
+      </div>
+      <!--/Author-->
+    </div>
+    <!--/container-->
+
+    
+
+    <script>
+      /* Progress bar */
+      // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+      var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight',
+        progress = document.querySelector('#progress'),
+        scroll;
+
+      document.addEventListener('scroll', function () {
+        /* Refresh scroll % width */
+        scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+        progress.style.setProperty('--scroll', scroll + '%');
+      });
+    </script>
+  </body>
+</html>
