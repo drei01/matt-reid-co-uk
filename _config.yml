@@ -9,7 +9,7 @@
 title: Matt Reid | Senior Software Developer
 email: matt@matt-reid.co.uk
 description: >
-    Matthew Reid is a software and web developer, specialising in Java and the JVM, js and web frameworks. He has a passion for clean code, entrepreneurship, company culture and making the world a better place.
+    Matthew Reid is a Full Stack web developer, specialising in Java and the JVM, js and web frameworks. He has a passion for clean code, entrepreneurship, company culture and making the world a better place.
 logo: '/assets/images/favicon.ico'
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://www.matt-reid.co.uk' # the base hostname & protocol for your site
@@ -17,7 +17,7 @@ paginate: 5 # The number of posts to show per page on your homepage
 
 name: 'Matt Reid'
 bio: >
-    Lead Software Architect. Java and js enthusiast, badminton lover, foodie.
+    Lead Software Architect. Java, Node.js and TypeScript enthusiast.
 author_image: '/assets/images/matt-reid.jpg'
 twitter_username: Matthew_Reid
 github_username: drei01
