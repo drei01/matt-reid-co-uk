@@ -5,7 +5,7 @@ title: Introducing Stark - Improve your home instantly
 
 My partner and I bought a house in Norwich, UK almost exactly two years ago. We were looking for a project. Something that allowed us to flex our creative muscles and really put our mark on it. Two years on and we've almost finished our home makeover, but it didn't go without a few hiccups.
 
-<amp-img width="600" height="400" layout="responsive" src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/house.jpeg"></amp-img>
+<img width="600" height="400" layout="responsive" src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/house.jpeg">
 
 When we got the keys, we were really excited and jumped into the renovation straight away. We pulled up carpets, stripped wallpaper and removed tiles. Then we realised we'd started decorating every room and we'd have nowhere to live. We took a step back and started thinking over our process methodically. Did we actually know what we were going to do to each room? We had ideas in our heads of the kind of style we wanted the rooms to have (bedroom, living room, bathroom) but we didn't actually have a plan.
 

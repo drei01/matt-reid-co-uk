@@ -3,7 +3,7 @@ layout: post
 title: Remote Working From an Airbnb
 ---
 
-<amp-img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/tenerife-remote-working.jpg" alt="Remote Working from Tenerife" height="600" width="700"></amp-img>
+<img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/tenerife-remote-working.jpg" alt="Remote Working from Tenerife" height="600" width="700">
 
 I'm sitting at the dining table, laptop open, looking out over the balcony to a sea view. It's 20°C outside, slightly cooler than that inside and I'm sipping a coffee made just how I like it. Did I mention I'm being paid at the same time? This was my wife and I in Tenerife in March this year (when it's much colder in the rest of Europe). We worked remote for a week in a warmer climate and it was fantastic. Before you book those cheap flights to your dream remote working destination, here's a few things that we found useful:
 

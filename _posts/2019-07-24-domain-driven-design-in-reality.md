@@ -4,9 +4,9 @@ title: Domain Driven Design in reality
 canonical_url: https://tech.small-improvements.com/implementing-domain-driven-design-at-small-improvements/
 ---
 
-<amp-img src="https://tech.small-improvements.com/wp-content/uploads/2019/05/domain-driven-design-small-improvements-1000x667.jpg" alt="" height="485" width="667"></amp-img>
+<img src="https://tech.small-improvements.com/wp-content/uploads/2019/05/domain-driven-design-small-improvements-1000x667.jpg" alt="" height="485" width="667">
 
-<amp-iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html&voice=en-GB-Wavenet-D" article-url="https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html" allowfullscreen=""></amp-iframe>
+<iframe sandbox="allow-scripts" scrolling="no" height="250" width="667" data-appid="dbtLvB_w7" class="app-ep-iframe" frameborder="0" src="https://play.ht/embed/?article_url=https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html&voice=en-GB-Wavenet-D" article-url="https://www.matt-reid.co.uk/2019/07/24/domain-driven-design-in-reality.html" allowfullscreen=""></iframe>
 
 We all love reading about the latest software developments trends and buzzwords but they can often turn out to be just that, buzzwords. For us at Small Improvements, Domain Driven Design (DDD) has really lived up to it’s own hype though and helped us build better software, faster and fewer bugs to boot. Do we have any evidence to back up that claim you ask? Well, here’s an example taken from one of our features 1:1 Meetings and how DDD helped us turn the codebase from a jungle of hidden traps, into a joyous place to be.
 
@@ -38,7 +38,7 @@ We defined our ubiquitous language to talk about meetings in our customer’s (a
 
 DDD defines a layered architecture which starting from the outside (edge of the application that users interact with) only depend on inner layers. None of the layers should depend on any above them. We were clearly violating this principle with our previous architecture and we felt the pain it caused.
 
-<amp-img src="https://tech.small-improvements.com/wp-content/uploads/2019/05/LayersAndDDD-220x300.png" alt="ddd layers" width="460" height="600"></amp-img>
+<img src="https://tech.small-improvements.com/wp-content/uploads/2019/05/LayersAndDDD-220x300.png" alt="ddd layers" width="460" height="600">
 
 Based on the DDD principles we refactored the code to 4 new layers
 

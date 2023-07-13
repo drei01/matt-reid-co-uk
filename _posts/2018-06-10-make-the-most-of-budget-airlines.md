@@ -3,7 +3,7 @@ layout: post
 title: Getting a first class experience from a budget airline
 ---
 
-<amp-img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/airport.jpeg" alt="Make the most of budget airlines" height="531" width="800"></amp-img>
+<img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/airport.jpeg" alt="Make the most of budget airlines" height="531" width="800">
 
 I've been on quite a few budget flights this year which has given me the opportunity to pick a few hints and tricks to make the most of the experience.
 

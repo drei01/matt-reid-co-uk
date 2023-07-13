@@ -2,43 +2,96 @@
 layout: default
 ---
 
-<main class="content" role="main">
-    <header class="blog-header">
-        <h1 class="blog-title">{{ site.title }}</h1>
-        <h2 class="blog-description">{{ site.description }}</h2>
-    </header>
+{% if site.show-nav-menu %} {% include nav.html%} {% endif %}
 
-    <div class="cf frame">
-        {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-            <div class="article-item">
-                <header class="post-header">
-                    <h2 class="post-title" itemprop="name">
-                        <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
-                    </h2>
-                </header>
-                <section class="post-excerpt" itemprop="description">
-                    <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
-                </section>
-                <div class="post-meta">
-                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-                </div>
-            </div>
-        </article>
-        {% endfor %}
+<div class="mx-auto text-center prose prose-{{site.theme-color}}">
+    <div>
+        <img
+            class="object-cover mx-auto h-36 w-36 rounded-full shadow-lg"
+            src="{{site.baseurl}}{{site.author-image}}"
+            alt="author profile image"
+        />
+        <h1>{{site.author}}</h1>
     </div>
+    {% if site.author-bio %}
+    <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
+    {% endif %}
+</div>
 
-    <nav class="pagination" role="navigation">
+<div class="cf frame">
+    {% for post in paginator.posts %}
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+            <header class="text-xl py-4">
+                <h2 itemprop="name">
+                    <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url" class="hover:underline"
+                        >{{ post.title }}</a
+                    >
+                </h2>
+            </header>
+            <section class="text-gray-600 font-light" itemprop="description">
+                <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
+            </section>
+            <div class="text-gray-600 font-light text-sm py-2">
+                <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
+<nav class="flex flex-col items-center pt-4" role="navigation">
+    <span class="text-sm text-gray-700">
+        Page <span class="font-semibold text-gray-900">{{ paginator.page }}</span> of
+        <span class="font-semibold text-gray-900">{{ paginator.total_pages }}</span>
+    </span>
+    <div class="inline-flex mt-2 xs:mt-0">
         {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+        <a
+            href="/page{{paginator.next_page}}"
+            class="flex items-center justify-center px-4 h-10 text-base font-medium bg-gray-200 rounded-l hover:bg-gray-400"
+        >
+            <svg
+                class="w-3.5 h-3.5 mr-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 5H1m0 0 4 4M1 5l4-4"
+                />
+            </svg>
+            Older
+        </a>
+        {% endif %} {% if paginator.previous_page %}
+        <a
+            href="{% if paginator.page == 2 %} / {% else %} /page{{paginator.previous_page}} {% endif %}"
+            class="flex items-center justify-center px-4 h-10 text-base font-medium bg-gray-200 border-0 border-l border-gray-300 rounded-r hover:bg-gray-400"
+        >
+            Newer
+            <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+            </svg>
+        </a>
         {% endif %}
-        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.previous_page %} {% if paginator.page == 2 %}
-        <a class="older-posts" href="/">Newer posts &rarr;</a>
-        {% else %}
-        <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-        {% endif %} {% endif %}
-    </nav>
-</main>
+    </div>
+</nav>
 
-{% include footer.html %}
+{% include social-media.html %} {% include footer.html %}

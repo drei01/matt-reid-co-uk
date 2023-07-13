@@ -3,7 +3,7 @@ layout: post
 title: Developing a product is like running a restaurant
 ---
 
-<amp-img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/chef-cooking.jpg" alt="Chef cooking" height="533" width="800"></amp-img>
+<img src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/chef-cooking.jpg" alt="Chef cooking" height="533" width="800">
 
 Imagine you walked into a restaurant and the waiter told you there was no menu. Instead you could order absolutely anything you wanted and it would be delivered to your table. What would you order? Chances are you won't think of anything like tripe and cuttlefish gratin or "meat fruit" (chicken liver parfait encased in a mandarin oriental gel and served with chargrilled sourdough) both of which are served at restaurants in London with two Michelin stars. Which will you enjoy more, the ham and cheese toasted sandwich that your brain just thought up or the labour of love that one of the world's best chefs spent their entire career perfecting?
 

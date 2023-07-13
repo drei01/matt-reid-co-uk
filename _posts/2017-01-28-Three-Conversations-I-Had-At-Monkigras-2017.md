@@ -3,7 +3,7 @@ layout: post
 title: Three Conversations I Had At Monkigras 2017
 ---
 
-<amp-img width="203" height="219" src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/monkigras-2017.jpg"></amp-img>
+<img width="203" height="219" src="https://s3-eu-west-1.amazonaws.com/matt-reid-images/monkigras-2017.jpg">
 
 As monkigras 2017 draws to a close, it firmly cements itself as my favourite conference in the software development world. James gets so many things right, that developers hate to be sold to. They need time (and beer) to mingle and converse and pure coding talks aren't the be all and end all.
 

@@ -49,14 +49,14 @@ Most cafes won't allow you to bring your own lunch (which could save you a serio
 
 **Opening times (week days):** 9am - 8pm
 
-<amp-iframe width="600"
+<iframe width="600"
   title="Numa Co Working Paris"
   height="200"
   layout="responsive"
   sandbox="allow-scripts allow-same-origin allow-popups"
   frameborder="0"
   src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJF3gPMTxu5kcRXq_G1Qe3FRc&key=AIzaSyCB6ZPzYnxpqvi7O6TmDRvATi7aYgPLCGY">
-</amp-iframe>
+</iframe>
 
 This startup hub is very buzzy, the offices above are an accelerator for young companies and the people in the cafe all seem to be working on the next big thing. Coffee is only €1 and some people I sat near didn't buy a single drink. This is definitely a great budget option. There aren't many sockets though so be sure to sit on one of the banks with a multi-plug underneath.
 
@@ -68,14 +68,14 @@ This startup hub is very buzzy, the offices above are an accelerator for young c
 
 **Opening times (week days):** 9am - 9pm
 
-<amp-iframe width="600"
+<iframe width="600"
   title="Bulliz Co Working Paris"
   height="200"
   layout="responsive"
   sandbox="allow-scripts allow-same-origin allow-popups"
   frameborder="0"
   src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQ_jfIRRu5kcRU6ld6Eg2diw&key=AIzaSyCB6ZPzYnxpqvi7O6TmDRvATi7aYgPLCGY">
-</amp-iframe>
+</iframe>
 
 This super friendly cafe isn't specifically for remote working but there were a few others there when I was working. The staff really didn't mind as the cafe wasn't busy and I bought plenty of their lovely choux pastries. Most seating places have a socket nearby. The best seat is in the far corner by the window.
 
@@ -87,13 +87,13 @@ This super friendly cafe isn't specifically for remote working but there were a 
 
 **Opening times (week days):** 8:30am - 7pm
 
-<amp-iframe width="600"
+<iframe width="600"
   title="Nuage Co Working Paris"
   height="200"
   layout="responsive"
   sandbox="allow-scripts allow-same-origin allow-popups"
   frameborder="0"
   src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ__pT5eZx5kcRAO3pFkY_0_A&key=AIzaSyCB6ZPzYnxpqvi7O6TmDRvATi7aYgPLCGY">
-</amp-iframe>
+</iframe>
 
 This is co working at its best (if you can afford it). Such a homely place, fans of Hao Miyazaki will love the early artwork on the walls. There's even a snug corner upstairs that you have to crawl to get to. Coffee was excellent (and included in the price). The snacks weren't as great as I hoped but there was enough to keep me going. They are also fine with people bringing their own food, you are paying to be there after all. Almost all the seats have sockets next to them.

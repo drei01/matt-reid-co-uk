@@ -5,22 +5,51 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Matt Reid | Senior Software Developer
-email: matt@matt-reid.co.uk
-description: >
+# change the followings to match your Github username and repo name
+baseurl: "/ " # the name of your github repo
+url: "https://www.matt-reid.co.uk" # the url of your github pages
+
+# site information used in page title, meta data etc.
+title: "Matt Reid | Senior Software Developer"
+description:  >
     Matthew Reid is a Full Stack web developer, specialising in Java and the JVM, js and web frameworks. He has a passion for clean code, entrepreneurship, company culture and making the world a better place.
+
+# color theme for links
+theme-color: pink # indigo|yellow|pink|green|stone|
+
+# homepage information
+author: 'Matt Reid'
+author-bio: >
+    Lead Software Architect. Java, Node.js and TypeScript enthusiast.
+author-image: '/assets/images/matt-reid.png'
+
+# navigation menu
+show-nav-menu: true
+
+nav-menu:
+- text: Home
+  permalink: 
+- text: About
+  permalink: about
+
+# use false to turn off any social media links
+twitter: https://twitter.com/Matthew_Reid
+facebook: false
+instagram: false
+github: https://github.com/drei01
+linkedin: false
+medium: false
+google-scholar: false
+email: mailto:matt@matt-reid.co.uk
+
+# footer information
+footer-msg: "All content copyright Matt Reid © 2023 • All rights reserved."
+footer-msg-link: "https://www.pricewell.com"
+
+# Site settings
 logo: '/assets/images/favicon.ico'
 baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://www.matt-reid.co.uk' # the base hostname & protocol for your site
 paginate: 5 # The number of posts to show per page on your homepage
-
-name: 'Matt Reid'
-bio: >
-    Lead Software Architect. Java, Node.js and TypeScript enthusiast.
-author_image: '/assets/images/matt-reid.jpg'
-twitter_username: Matthew_Reid
-github_username: drei01
 
 # Build settings
 markdown: kramdown
@@ -29,5 +58,6 @@ kramdown:
     parse_block_html: true
 
 plugins:
-    - jekyll-paginate
     - jekyll-sitemap
+    - jekyll-seo-tag
+    - jekyll-paginate
