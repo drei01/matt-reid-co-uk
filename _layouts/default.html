@@ -9,7 +9,14 @@
   {% endif %}
 
   <!-- Jekyll SEO plugin -->
-  {% seo %}
+  {% capture seo %}
+    {% seo %}
+  {% endcapture %}
+
+  {{ seo | replace: "summary", "summary_large_image" }}
+  <meta property="og:image" content="{{site.url}}/assets/images/og.png">
+  <meta name="twitter:image" content="{{site.url}}/assets/images/og.png">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">

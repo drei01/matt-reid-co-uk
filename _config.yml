@@ -20,7 +20,7 @@ theme-color: pink # indigo|yellow|pink|green|stone|
 # homepage information
 author: 'Matt Reid'
 author-bio: >
-    Lead Software Architect. Java, Node.js and TypeScript enthusiast.
+    Solo Entrepreneur | Lead Software Architect
 author-image: '/assets/images/matt-reid.png'
 
 # navigation menu
@@ -43,7 +43,7 @@ google-scholar: false
 email: mailto:matt@matt-reid.co.uk
 
 # footer information
-footer-msg: "All content copyright Matt Reid © 2023 • All rights reserved."
+footer-msg: "All content copyright Matthew Reid • All rights reserved."
 footer-msg-link: "https://www.pricewell.com"
 
 # Site settings
