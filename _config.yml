@@ -33,7 +33,7 @@ nav-menu:
   permalink: about
 
 # use false to turn off any social media links
-twitter: https://twitter.com/Matthew_Reid
+twitter:
 facebook: false
 instagram: false
 github: https://github.com/drei01
@@ -41,6 +41,7 @@ linkedin: false
 medium: false
 google-scholar: false
 email: mailto:matt@matt-reid.co.uk
+bluesky: https://bsky.app/profile/matt-reid.co.uk
 
 # footer information
 footer-msg: "All content copyright Matthew Reid • All rights reserved."

@@ -12,4 +12,4 @@ Currently building [PriceWell](https://pricwell.com) - a no-code Stripe integrat
 
 Why not check out [some of my blog posts](/)?
 
-I'm also on [GitHub](https://github.com/drei01) and [Twitter](https://twitter.com/Matthew_Reid)
+I'm also on [GitHub](https://github.com/drei01) and [Bluesky](https://bsky.app/profile/matt-reid.co.uk)
