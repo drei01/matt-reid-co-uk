@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reid Christmas Letter</title>
+        <link rel="icon" href="/assets/images/favicon.ico" />
+    </head>
+    <body>
+        <h1>Reid Family Christmas Letter</h1>
+        <p id="message">Please enter the password when prompted.</p>
+
+        <script>
+            const tryAgainLink = '<a href="/christmas">Try again?</a>';
+            async function sha256(message) {
+                // encode as UTF-8
+                const msgBuffer = new TextEncoder().encode(message);
+
+                // hash the message
+                const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+
+                // convert ArrayBuffer to Array
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+
+                // convert bytes to hex string
+                const hashHex = hashArray.map((b) => b.toString(16).padStart(2, '0')).join('');
+                return hashHex;
+            }
+
+            async function checkPassword() {
+                const password = window.prompt('What is the name of our first child?');
+                if (password === null) {
+                    console.log('Password entry cancelled.');
+                    return;
+                }
+
+                const hashedPassword = await sha256((password || '').toLowerCase().trim());
+                const correctHash = '2fa9eb130ea98eb629410e0bf631f0b8de277f37e8b60c783c75e6b56e42cdee';
+
+                if (hashedPassword === correctHash) {
+                    console.log('ok');
+                    document.getElementById('message').innerText =
+                        'Welcome to the Reid Family Christmas Letter! 🎄 Please wait...';
+                    aesGcmDecrypt(
+                        '4QwjheV+48MdW9Gff1YK+Il7bhQipuvc5nVAhapYVlpW4r4CRF0E04iQ5USePVYoP8Xf7EDLMY6rw2ztN2SokVAbyGRgkxzj73n9DbdSwfxbPZW4CsacsmnszNXvh2hfV+3xO7v13NZ80vrJAMZVhfPtPIXh1gpp4QvJtg==',
+                        password
+                    )
+                        .then((plaintext) => {
+                            window.location.href = plaintext;
+                        })
+                        .catch((e) => {
+                            console.error(e);
+                            document.getElementById('message').innerHTML =
+                                'Oops, the elves dropped a cog.' + tryAgainLink;
+                        });
+                } else {
+                    console.log('Incorrect password.');
+                    document.getElementById('message').innerHTML =
+                        'It appears you are technically challenged.' + tryAgainLink;
+                }
+            }
+
+            // source: https://gist.github.com/chrisveness/43bcda93af9f646d083fad678071b90a
+
+            /**
+             * Encrypts plaintext using AES-GCM with supplied password, for decryption with aesGcmDecrypt().
+             *                                                                      (c) Chris Veness MIT Licence
+             *
+             * @param   {String} plaintext - Plaintext to be encrypted.
+             * @param   {String} password - Password to use to encrypt plaintext.
+             * @returns {String} Encrypted ciphertext.
+             *
+             * @example
+             *   const ciphertext = await aesGcmEncrypt('my secret text', 'pw');
+             *   aesGcmEncrypt('my secret text', 'pw').then(function(ciphertext) { console.log(ciphertext); });
+             */
+            async function aesGcmEncrypt(plaintext, password) {
+                const pwUtf8 = new TextEncoder().encode(password); // encode password as UTF-8
+                const pwHash = await crypto.subtle.digest('SHA-256', pwUtf8); // hash the password
+
+                const iv = crypto.getRandomValues(new Uint8Array(12)); // get 96-bit random iv
+                const ivStr = Array.from(iv)
+                    .map((b) => String.fromCharCode(b))
+                    .join(''); // iv as utf-8 string
+
+                const alg = { name: 'AES-GCM', iv: iv }; // specify algorithm to use
+
+                const key = await crypto.subtle.importKey('raw', pwHash, alg, false, ['encrypt']); // generate key from pw
+
+                const ptUint8 = new TextEncoder().encode(plaintext); // encode plaintext as UTF-8
+                const ctBuffer = await crypto.subtle.encrypt(alg, key, ptUint8); // encrypt plaintext using key
+
+                const ctArray = Array.from(new Uint8Array(ctBuffer)); // ciphertext as byte array
+                const ctStr = ctArray.map((byte) => String.fromCharCode(byte)).join(''); // ciphertext as string
+
+                return btoa(ivStr + ctStr); // iv+ciphertext base64-encoded
+            }
+
+            /**
+             * Decrypts ciphertext encrypted with aesGcmEncrypt() using supplied password.
+             *                                                                      (c) Chris Veness MIT Licence
+             *
+             * @param   {String} ciphertext - Ciphertext to be decrypted.
+             * @param   {String} password - Password to use to decrypt ciphertext.
+             * @returns {String} Decrypted plaintext.
+             *
+             * @example
+             *   const plaintext = await aesGcmDecrypt(ciphertext, 'pw');
+             *   aesGcmDecrypt(ciphertext, 'pw').then(function(plaintext) { console.log(plaintext); });
+             */
+            async function aesGcmDecrypt(ciphertext, password) {
+                const pwUtf8 = new TextEncoder().encode(password); // encode password as UTF-8
+                const pwHash = await crypto.subtle.digest('SHA-256', pwUtf8); // hash the password
+
+                const ivStr = atob(ciphertext).slice(0, 12); // decode base64 iv
+                const iv = new Uint8Array(Array.from(ivStr).map((ch) => ch.charCodeAt(0))); // iv as Uint8Array
+
+                const alg = { name: 'AES-GCM', iv: iv }; // specify algorithm to use
+
+                const key = await crypto.subtle.importKey('raw', pwHash, alg, false, ['decrypt']); // generate key from pw
+
+                const ctStr = atob(ciphertext).slice(12); // decode base64 ciphertext
+                const ctUint8 = new Uint8Array(Array.from(ctStr).map((ch) => ch.charCodeAt(0))); // ciphertext as Uint8Array
+                // note: why doesn't ctUint8 = new TextEncoder().encode(ctStr) work?
+
+                try {
+                    const plainBuffer = await crypto.subtle.decrypt(alg, key, ctUint8); // decrypt ciphertext using key
+                    const plaintext = new TextDecoder().decode(plainBuffer); // plaintext from ArrayBuffer
+                    return plaintext; // return the plaintext
+                } catch (e) {
+                    throw new Error('Decrypt failed');
+                }
+            }
+
+            // Call the function when the page loads
+            checkPassword();
+        </script>
+    </body>
+</html>
