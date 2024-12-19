@@ -28,13 +28,9 @@
             }
 
             async function checkPassword() {
-                const password = window.prompt('What is the name of our first child?');
-                if (password === null) {
-                    console.log('Password entry cancelled.');
-                    return;
-                }
-
-                const hashedPassword = await sha256((password || '').toLowerCase().trim());
+                const p = window.prompt('What is the name of our first child?');
+                const password = (p || '').trim().toLowerCase();
+                const hashedPassword = await sha256(password);
                 const correctHash = '2fa9eb130ea98eb629410e0bf631f0b8de277f37e8b60c783c75e6b56e42cdee';
 
                 if (hashedPassword === correctHash) {
@@ -55,8 +51,7 @@
                         });
                 } else {
                     console.log('Incorrect password.');
-                    document.getElementById('message').innerHTML =
-                        'It appears you are technically challenged.' + tryAgainLink;
+                    document.getElementById('message').innerHTML = 'Fat fingers? ' + tryAgainLink;
                 }
             }
 
